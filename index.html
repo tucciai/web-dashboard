@@ -20,8 +20,8 @@
 
 </head>
 <body>
-<div class="app app-header-fixed ">
-  
+<div class="app app-header-fixed app-aside-fixed ">
+
 
     <!-- header -->
   <header id="header" class="app-header navbar" role="menu">
@@ -61,7 +61,7 @@
         <ul class="nav navbar-nav hidden-sm">
           <li class="dropdown pos-stc">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-              <span>Mega</span> 
+              <span>Mega</span>
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu wrapper w-full bg-white">
@@ -303,7 +303,7 @@
               <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
                 <span class="clear">
                   <span class="block m-t-sm">
-                    <strong class="font-bold text-lt">John.Smith</strong> 
+                    <strong class="font-bold text-lt">John.Smith</strong>
                     <b class="caret"></b>
                   </span>
                   <span class="text-muted text-xs block">Art Director</span>
@@ -350,7 +350,7 @@
                 <span>Navigation</span>
               </li>
               <li>
-                <a href class="auto">      
+                <a href class="auto">
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -390,7 +390,7 @@
                 <span>Components</span>
               </li>
               <li>
-                <a href class="auto">      
+                <a href class="auto">
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -419,7 +419,7 @@
                     <a href="layout_boxed.html">
                       <span>Boxed layout</span>
                     </a>
-                  </li>      
+                  </li>
                 </ul>
               </li>
               <li>
@@ -612,9 +612,9 @@
 
               <li class="line dk hidden-folded"></li>
 
-              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
+              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                 <span>Your Stuff</span>
-              </li>  
+              </li>
               <li>
                 <a href="page_profile.html">
                   <i class="icon-user icon text-success-lter"></i>
@@ -661,10 +661,10 @@
   <!-- content -->
   <div id="content" class="app-content" role="main">
   	<div class="app-content-body ">
-	    
+
 
 <div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
-    app.settings.asideFolded = false; 
+    app.settings.asideFolded = false;
     app.settings.asideDock = false;
   ">
   <!-- main -->
@@ -679,17 +679,17 @@
         <div class="col-sm-6 text-right hidden-xs">
           <div class="inline m-r text-left">
             <div class="m-b-xs">1290 <span class="text-muted">items</span></div>
-            <div ng-init="d3_1=[ 106,108,110,105,110,109,105,104,107,109,105,100,105,102,101,99,98 ]" 
-              ui-jq="sparkline" 
-              ui-options="[ 106,108,110,105,110,109,105,104,107,109,105,100,105,102,101,99,98 ], {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}" 
+            <div ng-init="d3_1=[ 106,108,110,105,110,109,105,104,107,109,105,100,105,102,101,99,98 ]"
+              ui-jq="sparkline"
+              ui-options="[ 106,108,110,105,110,109,105,104,107,109,105,100,105,102,101,99,98 ], {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}"
               class="sparkline inline">loading...
             </div>
           </div>
           <div class="inline text-left">
             <div class="m-b-xs">$30,000 <span class="text-muted">revenue</span></div>
-            <div ng-init="d3_2=[ 105,102,106,107,105,104,101,99,98,109,105,100,108,110,105,110,109 ]" 
-              ui-jq="sparkline" 
-              ui-options="[ 105,102,106,107,105,104,101,99,98,109,105,100,108,110,105,110,109 ], {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}" 
+            <div ng-init="d3_2=[ 105,102,106,107,105,104,101,99,98,109,105,100,108,110,105,110,109 ]"
+              ui-jq="sparkline"
+              ui-options="[ 105,102,106,107,105,104,101,99,98,109,105,100,108,110,105,110,109 ], {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}"
               class="sparkline inline">loading...
             </div>
           </div>
@@ -762,7 +762,7 @@
               [
                 { data: [ [0,7],[1,6.5],[2,12.5],[3,7],[4,9],[5,6],[6,11],[7,6.5],[8,8],[9,7] ], label:'TV', points: { show: true, radius: 1}, splines: { show: true, tension: 0.4, lineWidth: 1, fill: 0.8 } },
                 { data: [ [0,4],[1,4.5],[2,7],[3,4.5],[4,3],[5,3.5],[6,6],[7,3],[8,4],[9,3] ], label:'Mag', points: { show: true, radius: 1}, splines: { show: true, tension: 0.4, lineWidth: 1, fill: 0.8 } }
-              ], 
+              ],
               {
                 colors: ['#23b7e5', '#7266ba'],
                 series: { shadowSize: 3 },
@@ -788,7 +788,7 @@
           <div ui-jq="plot" ui-options="
             [
               { data: [ [1,5.5],[2,6.5],[3,7],[4,8],[5,7.5],[6,7],[7,6.8],[8,7],[9,7.2],[10,7],[11,6.8],[12,7],[13,2.5],[14,3.5],[15,7],[16,7],[17,6],[18,7],[19,6.8],[20,5],[21,7],[22,8],[23,6.8],[24,7] ], lines: { show: true, lineWidth: 1, fill:true, fillColor: { colors: [{opacity: 0.2}, {opacity: 0.8}] } } }
-            ], 
+            ],
             {
               colors: ['#e8eff0'],
               series: { shadowSize: 3 },
@@ -856,7 +856,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">            
+          <div class="col-md-6">
             <div class="row row-sm">
               <div class="col-xs-6 text-center">
                 <div ui-jq="easyPieChart" ui-options="{
@@ -892,7 +892,7 @@
                 </div>
                 <div class="text-muted font-bold text-xs m-t m-b">Started</div>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -908,7 +908,7 @@
                 <i class="fa fa-circle text-info m-r-xs m-l-sm"></i> 30
                 <i class="fa fa-circle text-warning m-r-xs m-l-sm"></i> 98
               </span>
-              <h4 class="font-thin m-t-none m-b-none text-muted">Teammates</h4>              
+              <h4 class="font-thin m-t-none m-b-none text-muted">Teammates</h4>
             </div>
             <ul class="list-group list-group-lg m-b-none">
               <li class="list-group-item">
@@ -946,7 +946,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">            
+        <div class="col-md-6">
           <div class="list-group list-group-lg list-group-sp">
             <a herf class="list-group-item clearfix">
               <span class="pull-left thumb-sm avatar m-r">
@@ -1150,7 +1150,7 @@
         </div>
       </div>
     </div>
-    <div class="padder-md">      
+    <div class="padder-md">
       <!-- streamline -->
       <div class="m-b text-md">Recent Activity</div>
       <div class="streamline b-l m-b">
@@ -1209,7 +1209,7 @@
       <!-- / streamline -->
     </div>
     <div data-ng-include=" 'tpl/blocks/aside.right.html' ">
-      
+
   <!-- aside right -->
   <div class="app-aside-right pos-fix no-padder w-md w-auto-xs bg-white b-l animated fadeInRight hide">
     <div class="vbox">
@@ -1279,7 +1279,7 @@
 	</div>
   </div>
   <!-- /content -->
-  
+
   <!-- footer -->
   <footer id="footer" class="app-footer" role="footer">
     <div class="wrapper b-t bg-light">

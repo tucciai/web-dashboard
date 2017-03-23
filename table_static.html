@@ -20,8 +20,8 @@
 
 </head>
 <body>
-<div class="app app-header-fixed ">
-  
+<div class="app app-header-fixed app-aside-fixed ">
+
 
     <!-- header -->
   <header id="header" class="app-header navbar" role="menu">
@@ -61,7 +61,7 @@
         <ul class="nav navbar-nav hidden-sm">
           <li class="dropdown pos-stc">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-              <span>Mega</span> 
+              <span>Mega</span>
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu wrapper w-full bg-white">
@@ -303,7 +303,7 @@
               <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
                 <span class="clear">
                   <span class="block m-t-sm">
-                    <strong class="font-bold text-lt">John.Smith</strong> 
+                    <strong class="font-bold text-lt">John.Smith</strong>
                     <b class="caret"></b>
                   </span>
                   <span class="text-muted text-xs block">Art Director</span>
@@ -350,7 +350,7 @@
                 <span>Navigation</span>
               </li>
               <li>
-                <a href class="auto">      
+                <a href class="auto">
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -390,7 +390,7 @@
                 <span>Components</span>
               </li>
               <li>
-                <a href class="auto">      
+                <a href class="auto">
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -419,7 +419,7 @@
                     <a href="layout_boxed.html">
                       <span>Boxed layout</span>
                     </a>
-                  </li>      
+                  </li>
                 </ul>
               </li>
               <li>
@@ -612,9 +612,9 @@
 
               <li class="line dk hidden-folded"></li>
 
-              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
+              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                 <span>Your Stuff</span>
-              </li>  
+              </li>
               <li>
                 <a href="page_profile.html">
                   <i class="icon-user icon text-success-lter"></i>
@@ -661,7 +661,7 @@
   <!-- content -->
   <div id="content" class="app-content" role="main">
   	<div class="app-content-body ">
-	    
+
 
 <div class="bg-light lter b-b wrapper-md">
   <h1 class="m-n font-thin h3">Static Table</h1>
@@ -690,7 +690,7 @@
               </td>
               <td>App prototype design</td>
             </tr>
-            <tr>                    
+            <tr>
               <td>
                 <div class="progress progress-xs m-t-xs m-b-none">
                   <div class="progress-bar bg-info" data-toggle="tooltip" data-original-title="40%" style="width: 40%"></div>
@@ -698,7 +698,7 @@
               </td>
               <td>Design documents</td>
             </tr>
-            <tr>                    
+            <tr>
               <td>
                 <div class="progress progress-xs m-t-xs m-b-none">
                   <div class="progress-bar bg-warning" data-toggle="tooltip" data-original-title="20%" style="width: 20%"></div>
@@ -706,7 +706,7 @@
               </td>
               <td>UI toolkit</td>
             </tr>
-            <tr>                    
+            <tr>
               <td>
                 <div class="progress progress-xs m-t-xs m-b-none">
                   <div class="progress-bar bg-danger" data-toggle="tooltip" data-original-title="15%" style="width: 15%"></div>
@@ -725,12 +725,12 @@
           <thead>
             <tr>
               <th style="width:60px;" class="text-center">Graph</th>
-              <th>Item</th>                    
+              <th>Item</th>
               <th style="width:70px;"></th>
             </tr>
           </thead>
           <tbody>
-            <tr>                    
+            <tr>
               <td>
                 <div ng-init="data1=[ 16,15,15,14,17,18,16,15,16 ]" ui-jq="sparkline" ui-options=", {type:'bar', height:19, barWidth:4, barSpacing:2, barColor:'#27c24c'}" class="sparkline inline">loading...</div>
               </td>
@@ -748,7 +748,7 @@
                 <i class="fa fa-level-up"></i> 20%
               </td>
             </tr>
-            <tr>                    
+            <tr>
               <td>
                 <div ng-init="data3=[ 16,15,15,14,17,18,16,15,16 ]" ui-jq="sparkline" ui-options=", {type:'line', height:19, width:60, lineColor:'#7266ba', fillColor:'#fff'}" class="sparkline inline">loading...</div>
               </td>
@@ -757,7 +757,7 @@
                 <i class="fa fa-level-down"></i> 5%
               </td>
             </tr>
-            <tr>                    
+            <tr>
               <td>
                 <div ng-init="data4=[ 16,15,15,14,17,18,16,15,16 ]" ui-jq="sparkline" ui-options=", {type:'discrete', height:19, width:60, lineColor:'#27c24c'}" class="sparkline inline">loading...</div>
               </td>
@@ -783,7 +783,7 @@
           <option value="2">Bulk edit</option>
           <option value="3">Export</option>
         </select>
-        <button class="btn btn-sm btn-default">Apply</button>                
+        <button class="btn btn-sm btn-default">Apply</button>
       </div>
       <div class="col-sm-4">
       </div>
@@ -896,12 +896,12 @@
             <option value="2">Bulk edit</option>
             <option value="3">Export</option>
           </select>
-          <button class="btn btn-sm btn-default">Apply</button>                  
+          <button class="btn btn-sm btn-default">Apply</button>
         </div>
         <div class="col-sm-4 text-center">
           <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
         </div>
-        <div class="col-sm-4 text-right text-center-xs">                
+        <div class="col-sm-4 text-right text-center-xs">
           <ul class="pagination pagination-sm m-t-none m-b-none">
             <li><a href><i class="fa fa-chevron-left"></i></a></li>
             <li><a href>1</a></li>
@@ -922,7 +922,7 @@
 	</div>
   </div>
   <!-- /content -->
-  
+
   <!-- footer -->
   <footer id="footer" class="app-footer" role="footer">
     <div class="wrapper b-t bg-light">
